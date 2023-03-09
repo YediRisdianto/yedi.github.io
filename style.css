@@ -1,0 +1,262 @@
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+/* UTILITY */
+
+.tombol {
+    background-color: #0A993C;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.tombol:hover {
+    background-color: #0A993C;
+    color: white;
+}
+
+.tombol2 {
+    background-color: #262626;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+.tombol2:hover {
+    background-color: #313131;
+    color: white;
+}
+
+.judul {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.judul::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #0A993C;
+    width: 10%;
+    margin: auto;
+}
+
+.judul2 {
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.judul2::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #0A993C;
+    width: 10%;
+    margin: auto;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(p.jpg);
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    position: relative;
+    border-bottom: 20px solid #0A993C;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),  rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 h1 {
+    color: white;
+    margin-top: 170px;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.jumbotron .display-4 p {
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+/* HADITS PANEL */
+
+
+.hadits-panel {
+    color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -125px;
+    background-color: #262626;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+
+
+/* PROFIL */
+
+.profil {
+    border-bottom: 20px solid #0A993C;
+    margin-top: 50px;
+}
+
+.profile {
+    text-align: center;
+    background-color: #0A993C;
+    margin-bottom: 60px;
+    padding: 70px; 
+    border-radius: 1rem;
+}
+
+
+.profile .salam img {
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.profile .salam h6 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.profile .salam p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.profile .gambar img{
+    width: 20rem;
+}
+
+
+/* KEGIATAN */
+
+.kegiatan {
+    background-color: #262626;
+}
+
+.list-kegiatan {
+    padding: 80px;
+}
+
+.list-kegiatan .daftar-kegiatan {
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    background-color: #262626;
+    border-bottom: 20px solid #0A993C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+
+    .nav-link {
+        margin-right: 25px;
+    } 
+    
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0A993C;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+
+    }
+
+    .jumbotron .display-4 h1 {
+        font-size: 60px;
+    }
+
+    .jumbotron .display-4 p {
+        font-size: 19px;
+    }
+
+    .hadits-panel {
+        color: white;
+        border-radius: 12px;
+        margin-top: -120px;
+        background-color: #262626;
+        padding: 30px 50px;
+        text-align: center;
+    }
+
+    .profil {
+        border-bottom: 20px solid #0A993C;
+        margin-top: -60px;
+    }
+
+    .profile {
+        text-align: center;
+        background-color: #0A993C;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        padding: 70px; 
+        padding: 100px;
+        margin-top: 100px;
+        border-radius: 1rem;
+    }
+
+
+    .profile .salam img {
+        width: 300px;
+        margin-bottom: 1rem;
+    }
+
+
+    .profile .gambar img{
+        width: 520px;
+    }
+
+    .list-kegiatan {
+        padding: 40px 160px 40px;
+    }
+}
